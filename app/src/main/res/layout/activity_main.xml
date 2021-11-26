@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/comm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/logo"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="50sp"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/user_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginTop="100sp"
+        android:backgroundTint="@color/teal_700"
+        android:ems="10"
+        android:hint="@string/hint_user_field"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="@color/textColorHint" />
+
+    <Button
+        android:id="@+id/main_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_field"
+        android:layout_marginTop="20sp"
+        android:layout_marginHorizontal="120sp"
+        android:backgroundTint="@color/black"
+        android:text="@string/main_button" />
+
+    <TextView
+        android:id="@+id/resultInfo"
+        android:layout_below="@id/main_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textAlignment="center"
+        android:textColor="@color/purple_200"
+        android:layout_marginTop="50sp"
+        android:textSize="25sp" />
+
+
+</RelativeLayout>
